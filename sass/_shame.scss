@@ -14,15 +14,6 @@ input#initial  {
   width: 10%;
 }
 
-#content {
-  max-width: 100%;
-  margin: 0;
-}
-
-.main-content {
-  padding:0 em(40);
-}
-
 .form-group-area{
   width: 40%;
 }
@@ -31,15 +22,82 @@ input#initial  {
   width: 25%;
 }
 
-// Make the new radio and checkboxes grey when disabled
-.block-label.disabled {
-  color: $grey-1;
+.form-label {
+  white-space: nowrap;
 }
 
-.button-secondary{
-  @include button($grey-3);
+#id-postcode-form-group input {
+  text-transform: uppercase;
 }
 
+.sort-asc::before {
+  content: "\25B2  ";
+}
+.sort-desc::before {
+  content: "\25BC  ";
+}
+
+.sortlink {
+  text-decoration: none;
+}
+
+form.inline-form{
+  display: inline-block;
+}
+
+
+// add in table stylings for the jsa cohort report
+table .target {
+  border-bottom: 3px solid #000;
+}
+
+table .achieved, table .achieved a {
+  color: $red;
+  font-weight:bold;
+}
+table .next-target, table .next-target a {
+  font-weight:bold;
+  color: $black;
+}
+
+.passed {
+  color: $red;
+  font-size: 0.8em;
+}
+.current {
+  color: $black;
+  font-size: 0.8em;
+}
+
+.green-tick {
+  color: $green;
+}
+
+.red-cross {
+  color: $red;
+}
+
+table.targets{
+  margin-bottom: 20px;
+
+  th,td{
+    border-bottom: none;
+  }
+}
+
+table.caseload-results .linksummary u {
+  font-weight: 700;
+}
+
+table.caseload-results th {
+  font-weight: normal;
+}
+
+.back-nav {
+  margin-top: 30px;
+}
+
+// This is something that is coming down the line in the govuk_element project
 caption {
   text-align: left;
 }

@@ -10,7 +10,7 @@
       float: left;
       margin: 0;
     }
-    
+
     li{
       float: left;
 
@@ -25,7 +25,7 @@
         font-weight: bold;
         color: $white;
       }
-    }  
+    }
   }
 
   .external-links-wrapper{
@@ -38,10 +38,11 @@
 
     li {
       display: inline;
-    
+
       a {
         color: $govuk-blue;
-        font-size: 16px
+        font-size: 16px;
+        padding: 0 0 0 5px;
       }
     }
   }

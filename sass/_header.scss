@@ -1,7 +1,8 @@
 #global-header {
   .header-wrapper {
     max-width: 100%;
-    padding: em(15) em(45);
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   // hide the crown logo
@@ -9,14 +10,26 @@
     background: black;
   }
 
+  &.with-proposition {
+    .header-wrapper {
+      .header-proposition {
+        width: 100%;
+
+        .content{
+          margin: 0;
+        }
+      }
+    }
+  }
+
   #sign-out-menu {
-    margin-top: em(5);
+    margin-top: 5px;
     text-align: right;
     color: white;
     font-size: 16px;
 
     ul {
-      padding-top: em(4);
+      padding-top: 4px;
 
       li {
         display: inline;
@@ -31,5 +44,40 @@
       color: white;
       text-decoration: none;
     }
+  }
+
+  .banner-user-details {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+  }
+
+  .banner-username {
+    font-size: 1.5em !important;
+    line-height: 1.2em !important;
+  }
+
+  .banner-settings {
+    float:right;
+    padding-top: 12px;
+    padding-bottom: 8px;
+  }
+
+  .banner-dcams {
+    font-size: 1.3em !important;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  .settings-button, .settings-button:visited, .settings-button:link {
+      float: right;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+  }
+
+  .header-location-link {
+    color: $white;
   }
 }

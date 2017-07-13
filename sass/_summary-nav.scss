@@ -39,10 +39,10 @@
           color: $govuk-blue;
         }
       }
-      
+
 
       &.disabled {
-        cursor: none;
+        cursor: default;
         opacity: 0.5;
         span {
           color: $grey-1;

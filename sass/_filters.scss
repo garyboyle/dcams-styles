@@ -9,3 +9,15 @@
 .clear {
   vertical-align: bottom;
 }
+
+.options-hidden::before {
+    content: "+ ";
+}
+
+.options-showing::before {
+    content: "- ";
+}
+
+.filterlink, .optionlink {
+  margin-left: -10px;
+}
